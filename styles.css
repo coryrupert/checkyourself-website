@@ -151,6 +151,45 @@ h2 {
   line-height: 1.45;
 }
 
+.feature-ai {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.15rem 1.6rem;
+  padding: 1.2rem 1.25rem 1.3rem;
+  border: 1.5px solid var(--accent);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(204, 85, 0, 0.16), transparent 48%),
+    var(--card);
+}
+
+.feature-ai .ai-copy {
+  flex: 1 1 18rem;
+}
+
+.feature-ai .kicker {
+  color: var(--accent);
+}
+
+.feature-ai h2 {
+  font-size: 1.35rem;
+}
+
+.feature-ai p {
+  max-width: 38rem;
+}
+
+.feature-ai .shot {
+  width: min(200px, 52vw);
+  margin: 0;
+}
+
+.hero .lede strong {
+  color: var(--fg);
+  font-weight: 600;
+}
+
 .shots-head {
   display: flex;
   align-items: baseline;
