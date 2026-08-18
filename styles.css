@@ -392,6 +392,22 @@ h2 {
   text-transform: uppercase;
 }
 
+.ios-widget .widget-add {
+  margin-left: auto;
+  display: grid;
+  place-items: center;
+  width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 .ios-widget ul {
   margin: 0;
   padding: 0;
