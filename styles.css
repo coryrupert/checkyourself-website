@@ -310,6 +310,46 @@ h2 {
   aspect-ratio: 422 / 514;
 }
 
+.device-screen .shot-still {
+  display: none;
+}
+
+.shot-widget .shot-still {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shot-motion {
+    display: none;
+  }
+  .shot-still {
+    display: block;
+  }
+}
+
+.shot-widget {
+  flex: 0 0 auto;
+  width: min(22rem, 100%);
+  margin: 0;
+}
+
+.shot-widget img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+  box-shadow: 0 10px 24px rgba(28, 25, 22, 0.16);
+}
+
+.shot-widget figcaption {
+  margin-top: 0.7rem;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-align: center;
+}
+
 .widget-shelf {
   display: flex;
   flex-wrap: wrap;
