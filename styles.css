@@ -273,6 +273,21 @@ h2 {
   height: auto;
 }
 
+.device-screen .shot-still,
+.shot-widget .shot-still {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shot-motion {
+    display: none;
+  }
+
+  .shot-still {
+    display: block;
+  }
+}
+
 .phone {
   padding: 0.55rem 0.48rem 0.62rem;
   border-radius: 2.15rem;
