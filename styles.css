@@ -253,27 +253,113 @@ h2 {
   max-width: 40rem;
 }
 
+.device {
+  position: relative;
+  background: var(--bezel);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.14),
+    0 16px 36px rgba(28, 25, 22, 0.22);
+}
+
+.device-screen {
+  line-height: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+.device-screen img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.phone {
+  padding: 0.55rem 0.48rem 0.62rem;
+  border-radius: 2.15rem;
+}
+
+.phone .device-screen {
+  border-radius: 1.58rem;
+}
+
+.ipad {
+  padding: 0.72rem 0.68rem 0.82rem;
+  border-radius: 1.15rem;
+}
+
+.ipad .device-screen {
+  border-radius: 0.28rem;
+}
+
+.ipad::before {
+  content: "";
+  position: absolute;
+  top: 0.28rem;
+  left: 50%;
+  z-index: 1;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 50%;
+  background: #2e2a26;
+  transform: translateX(-50%);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.watch {
+  padding: 0.78rem 0.62rem;
+  border-radius: 2.45rem;
+}
+
+.watch .device-screen {
+  border-radius: 1.7rem;
+}
+
+.watch::after {
+  content: "";
+  position: absolute;
+  top: 26%;
+  right: -0.3rem;
+  width: 0.34rem;
+  height: 1.45rem;
+  border-radius: 0.12rem;
+  background: #3c3732;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.watch::before {
+  content: "";
+  position: absolute;
+  top: 48%;
+  right: -0.22rem;
+  width: 0.2rem;
+  height: 0.7rem;
+  border-radius: 0.08rem;
+  background: #3c3732;
+}
+
 .icloud-devices {
   display: flex;
   align-items: flex-end;
   justify-content: center;
   gap: 0.7rem;
+  padding-right: 0.6rem;
 }
 
-.icloud-devices .shot-photo-phone {
+.icloud-devices .phone {
   width: min(10.5rem, 42%);
 }
 
-.icloud-devices .shot-photo-ipad {
+.icloud-devices .ipad {
   width: min(11.5rem, 40%);
 }
 
-.icloud-devices .shot-photo-watch {
+.icloud-devices .watch {
   width: min(5.6rem, 22%);
 }
 
 .shot-watch {
   width: min(178px, 52vw);
+  padding-right: 8px;
 }
 
 .shot figcaption {
@@ -289,7 +375,6 @@ h2 {
   display: block;
   width: 100%;
   height: auto;
-  box-shadow: 0 14px 32px rgba(28, 25, 22, 0.16);
 }
 
 .shot-widget {
