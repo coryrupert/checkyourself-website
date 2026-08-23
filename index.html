@@ -7,7 +7,7 @@
   <meta name="description" content="Check Yourself is a workout planner for iPhone, iPad, and Apple Watch. No ads, no tracking.">
   <link rel="icon" href="images/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="images/icon.svg">
-  <link rel="stylesheet" href="styles.css?v=12">
+  <link rel="stylesheet" href="styles.css?v=17">
 </head>
 <body>
   <main class="site">
@@ -25,35 +25,20 @@
         <p class="kicker">iPhone, iPad, and Apple Watch</p>
         <h1>Check Yourself</h1>
         <p class="lede">Build, plan, schedule...Check Yourself</p>
+        <a class="app-store" href="https://apps.apple.com/app/id6802484828" rel="noopener" aria-label="Download on the App Store">
+          <img class="app-store-badge app-store-badge-light" src="images/download-on-the-app-store.svg" width="180" height="60" alt="">
+          <img class="app-store-badge app-store-badge-dark" src="images/download-on-the-app-store-white.svg" width="180" height="60" alt="">
+        </a>
       </div>
-    </section>
-
-    <section class="features" aria-label="What it does">
-      <article class="feature">
-        <h2>Build</h2>
-        <p>Start from a bundled plan, use Apple Intelligence to generate one, build your own from scratch, or import a CSV file.</p>
-      </article>
-      <article class="feature">
-        <h2>Schedule</h2>
-        <p>Apply a plan, or add a quick task.</p>
-      </article>
-      <article class="feature">
-        <h2>Complete</h2>
-        <p>Mark a workout complete, add notes and photos, or add a Quick Task for something that isn’t part of a plan. Optional push notifications so you don't forget.</p>
-      </article>
-      <article class="feature">
-        <h2>Check Yourself on all Devices</h2>
-        <p>iPhone, iPad, and Apple Watch. Plans, progress, and Quick Tasks stay in sync over iCloud.</p>
-      </article>
     </section>
 
     <div class="shots-head">
       <h2>Check Yourself on iPhone</h2>
       <p>iPhone</p>
     </div>
-    <p class="section-lede">The same highlights from the app: build a plan, add a Quick Task, start from a template, generate with Apple Intelligence, and stay in sync. Swipe to see each one.</p>
-    <div class="carousel" data-carousel aria-roledescription="carousel" aria-label="Check Yourself on iPhone">
-      <div class="shots shots-carousel" tabindex="0">
+    <p class="section-lede">The same highlights from the app: build a plan, add a Quick Task, start from a template, or generate with Apple Intelligence. Scroll to see each one.</p>
+    <div class="carousel" aria-label="Check Yourself on iPhone">
+      <div class="shots shots-carousel">
         <figure class="shot shot-card">
           <div class="shot-card-copy">
             <h3>Build a Plan</h3>
@@ -82,32 +67,27 @@
           </div>
           <div class="device phone"><div class="device-screen"><img src="images/apple-intelligence.jpg" width="800" height="1738" alt="Describe a plan for Apple Intelligence"></div></div>
         </figure>
-        <figure class="shot shot-card shot-card-icloud">
-          <div class="shot-card-copy">
-            <h3>Stay in Sync with iCloud</h3>
-            <p>Keeps iPhone, iPad and Apple Watch in Sync</p>
-          </div>
-          <div class="icloud-devices">
-            <div class="device phone"><div class="device-screen"><img src="images/home.jpg" width="800" height="1738" alt="iPhone Home"></div></div>
-            <div class="device ipad"><div class="device-screen"><img src="images/ipad-home.jpg" width="900" height="1200" alt="iPad Home"></div></div>
-            <div class="device watch"><div class="device-screen"><img src="images/watch-home.jpg?v=3" width="422" height="514" alt="Apple Watch Home"></div></div>
-          </div>
-        </figure>
-      </div>
-      <div class="carousel-nav">
-        <button type="button" class="carousel-btn carousel-prev" aria-label="Previous iPhone screen">‹</button>
-        <div class="carousel-dots"></div>
-        <button type="button" class="carousel-btn carousel-next" aria-label="Next iPhone screen">›</button>
       </div>
     </div>
+    <figure class="shot shot-card shot-card-icloud">
+      <div class="shot-card-copy">
+        <h3>Stay in Sync with iCloud</h3>
+        <p>Keeps iPhone, iPad and Apple Watch in Sync</p>
+      </div>
+      <div class="icloud-devices">
+        <div class="device phone"><div class="device-screen"><img src="images/home.jpg" width="800" height="1738" alt="iPhone Home"></div></div>
+        <div class="device ipad"><div class="device-screen"><img src="images/ipad-home.jpg" width="900" height="1200" alt="iPad Home"></div></div>
+        <div class="device watch"><div class="device-screen"><img src="images/watch-home.jpg?v=3" width="422" height="514" alt="Apple Watch Home"></div></div>
+      </div>
+    </figure>
 
     <div class="shots-head">
       <h2>Check Yourself On iPad</h2>
       <p>iPad</p>
     </div>
-    <p class="section-lede">The same story on the bigger screen. Swipe to see each one.</p>
-    <div class="carousel carousel-ipad" data-carousel aria-roledescription="carousel" aria-label="Check Yourself on iPad">
-      <div class="shots shots-carousel" tabindex="0">
+    <p class="section-lede">The same story on the bigger screen. Scroll to see each one.</p>
+    <div class="carousel carousel-ipad" aria-label="Check Yourself on iPad">
+      <div class="shots shots-carousel">
         <figure class="shot shot-card shot-card-ipad">
           <div class="shot-card-copy">
             <h3>Build a Plan</h3>
@@ -136,11 +116,6 @@
           </div>
           <div class="device ipad"><div class="device-screen"><img src="images/ipad-apple-intelligence.jpg" width="900" height="1200" alt="Describe a plan for Apple Intelligence on iPad"></div></div>
         </figure>
-      </div>
-      <div class="carousel-nav">
-        <button type="button" class="carousel-btn carousel-prev" aria-label="Previous iPad screen">‹</button>
-        <div class="carousel-dots"></div>
-        <button type="button" class="carousel-btn carousel-next" aria-label="Next iPad screen">›</button>
       </div>
     </div>
 
@@ -187,64 +162,5 @@
       </nav>
     </footer>
   </main>
-  <script>
-    document.querySelectorAll("[data-carousel]").forEach(function (root) {
-      var track = root.querySelector(".shots-carousel");
-      var cards = Array.prototype.slice.call(track.children);
-      var dots = root.querySelector(".carousel-dots");
-      var prev = root.querySelector(".carousel-prev");
-      var next = root.querySelector(".carousel-next");
-
-      function indexOfNearest() {
-        var mid = track.scrollLeft + track.clientWidth / 2;
-        var best = 0;
-        var bestDist = Infinity;
-        cards.forEach(function (card, i) {
-          var center = card.offsetLeft + card.offsetWidth / 2;
-          var dist = Math.abs(center - mid);
-          if (dist < bestDist) {
-            bestDist = dist;
-            best = i;
-          }
-        });
-        return best;
-      }
-
-      function go(i) {
-        i = Math.max(0, Math.min(cards.length - 1, i));
-        var card = cards[i];
-        track.scrollTo({
-          left: card.offsetLeft,
-          behavior: "smooth"
-        });
-      }
-
-      cards.forEach(function (_, i) {
-        var dot = document.createElement("button");
-        dot.type = "button";
-        dot.setAttribute("aria-label", "Go to slide " + (i + 1));
-        dot.addEventListener("click", function () { go(i); });
-        dots.appendChild(dot);
-      });
-
-      function update() {
-        var current = indexOfNearest();
-        Array.prototype.forEach.call(dots.children, function (dot, i) {
-          dot.setAttribute("aria-current", i === current ? "true" : "false");
-        });
-        prev.disabled = current === 0;
-        next.disabled = current === cards.length - 1;
-      }
-
-      prev.addEventListener("click", function () { go(indexOfNearest() - 1); });
-      next.addEventListener("click", function () { go(indexOfNearest() + 1); });
-      track.addEventListener("scroll", function () { requestAnimationFrame(update); }, { passive: true });
-      track.addEventListener("keydown", function (event) {
-        if (event.key === "ArrowLeft") { event.preventDefault(); go(indexOfNearest() - 1); }
-        if (event.key === "ArrowRight") { event.preventDefault(); go(indexOfNearest() + 1); }
-      });
-      update();
-    });
-  </script>
 </body>
 </html>
