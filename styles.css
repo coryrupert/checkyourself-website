@@ -129,10 +129,59 @@ h2 {
   margin-bottom: 0.45rem;
 }
 
+.site-simple {
+  width: min(36rem, calc(100% - 2.5rem));
+}
+
+.hero-simple {
+  padding-bottom: 1.6rem;
+}
+
+.highlights {
+  display: grid;
+  gap: 1.25rem;
+  margin: 0 0 1.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+.highlight {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.highlight-icon {
+  flex: 0 0 2.2rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  color: var(--accent);
+}
+
+.highlight h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.highlight p {
+  margin: 0.12rem 0 0;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  line-height: 1.35;
+}
+
 .app-store {
   display: inline-block;
-  margin-top: 1.15rem;
+  margin: 0.25rem 0 2rem;
   line-height: 0;
+}
+
+.hero .app-store {
+  margin-top: 1.15rem;
+  margin-bottom: 0;
 }
 
 .app-store-badge {
