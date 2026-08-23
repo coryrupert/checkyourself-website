@@ -199,6 +199,22 @@ h2 {
   width: min(360px, 80vw);
 }
 
+.shot-poster {
+  width: min(220px, 58vw);
+}
+
+.shot-poster img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 14px 32px rgba(28, 25, 22, 0.16);
+}
+
+.shot-poster-ipad {
+  width: min(260px, 70vw);
+}
+
 .shot-watch {
   width: min(168px, 48vw);
   padding-right: 0.45rem;
