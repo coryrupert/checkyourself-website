@@ -202,6 +202,32 @@ h2 {
   width: min(360px, 80vw);
 }
 
+.carousel {
+  max-width: min(22rem, 100%);
+  margin: 0 auto 1.75rem;
+}
+
+.carousel-ipad {
+  max-width: min(24rem, 100%);
+}
+
+.shots-carousel {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  gap: 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0.2rem 0 0.85rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.shots-carousel::-webkit-scrollbar {
+  display: none;
+}
+
 .shots-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(17.5rem, 100%), 1fr));
@@ -220,6 +246,17 @@ h2 {
   border: 1px solid var(--rule);
   border-radius: 22px;
   box-shadow: 0 10px 24px rgba(28, 25, 22, 0.08);
+}
+
+.shots-carousel .shot-card,
+.shots-carousel .shot-card-ipad,
+.shots-carousel .shot-card-icloud {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .shot-card-ipad {
@@ -253,6 +290,55 @@ h2 {
   max-width: 40rem;
 }
 
+.carousel-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.15rem;
+}
+
+.carousel-btn {
+  appearance: none;
+  width: 2.2rem;
+  height: 2.2rem;
+  padding: 0;
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  background: var(--card);
+  color: var(--fg);
+  font-size: 1.15rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.carousel-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.carousel-dots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.carousel-dots button {
+  appearance: none;
+  width: 0.55rem;
+  height: 0.55rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--rule);
+  cursor: pointer;
+}
+
+.carousel-dots button[aria-current="true"] {
+  background: var(--accent);
+}
+
 .device {
   position: relative;
   background: var(--bezel);
@@ -271,21 +357,6 @@ h2 {
   display: block;
   width: 100%;
   height: auto;
-}
-
-.device-screen .shot-still,
-.shot-widget .shot-still {
-  display: none;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .shot-motion {
-    display: none;
-  }
-
-  .shot-still {
-    display: block;
-  }
 }
 
 .phone {
