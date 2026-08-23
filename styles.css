@@ -306,24 +306,28 @@ h2 {
 }
 
 .watch {
-  padding: 0.78rem 0.62rem;
-  border-radius: 2.45rem;
+  padding: 0.42rem 0.34rem;
+  border-radius: 1.85rem;
+  background: linear-gradient(160deg, #6a645c, #1c1916 38%, #2e2a26);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.28),
+    0 16px 36px rgba(28, 25, 22, 0.22);
 }
 
 .watch .device-screen {
-  border-radius: 1.7rem;
+  border-radius: 1.45rem;
 }
 
 .watch::after {
   content: "";
   position: absolute;
-  top: 26%;
-  right: -0.3rem;
-  width: 0.34rem;
-  height: 1.45rem;
+  top: 24%;
+  right: -0.32rem;
+  width: 0.32rem;
+  height: 1.35rem;
   border-radius: 0.12rem;
-  background: #3c3732;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+  background: linear-gradient(180deg, #8a847c, #3c3732);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
 }
 
 .watch::before {
@@ -334,7 +338,7 @@ h2 {
   width: 0.2rem;
   height: 0.7rem;
   border-radius: 0.08rem;
-  background: #3c3732;
+  background: #4a453f;
 }
 
 .icloud-devices {
@@ -354,7 +358,7 @@ h2 {
 }
 
 .icloud-devices .watch {
-  width: min(5.6rem, 22%);
+  width: min(8.4rem, 30%);
 }
 
 .shot-watch {
