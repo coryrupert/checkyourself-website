@@ -150,10 +150,40 @@ h2 {
 
 .site-simple {
   width: min(36rem, calc(100% - 2.5rem));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.site-simple .site-nav {
+  width: 100%;
+  justify-content: center;
 }
 
 .hero-simple {
+  justify-items: center;
   padding-bottom: 1.6rem;
+  text-align: center;
+}
+
+.hero-simple .lede {
+  margin-inline: auto;
+}
+
+.site-simple .highlights {
+  width: max-content;
+  max-width: 100%;
+  margin-inline: auto;
+  text-align: left;
+}
+
+.site-simple .site-footer {
+  width: 100%;
+}
+
+.site-simple .site-footer nav {
+  justify-content: center;
 }
 
 .highlights {
