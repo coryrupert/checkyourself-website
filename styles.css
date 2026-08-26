@@ -1,5 +1,7 @@
 :root {
   --bg: #f7f3ee;
+  --bg-top: #f0a05a;
+  --bg-bottom: #f7f3ee;
   --fg: #1c1916;
   --muted: #5c554e;
   --accent: #cc5500;
@@ -12,6 +14,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #161311;
+    --bg-top: #5c240c;
+    --bg-bottom: #161311;
     --fg: #f4eee8;
     --muted: #b7aea4;
     --accent: #f26b1a;
@@ -31,15 +35,26 @@ img {
 }
 
 html {
+  min-height: 100%;
   scroll-behavior: smooth;
+  background: var(--bg-bottom);
 }
 
 body {
   margin: 0;
-  background: var(--bg);
+  min-height: 100vh;
+  background: transparent;
   color: var(--fg);
   font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   line-height: 1.55;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
 }
 
 a {
