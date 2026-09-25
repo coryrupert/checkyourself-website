@@ -141,6 +141,7 @@ h2 {
   width: 88px;
   height: 88px;
   border-radius: 22px;
+  overflow: hidden;
   box-shadow: 0 10px 28px rgba(204, 85, 0, 0.28);
 }
 
