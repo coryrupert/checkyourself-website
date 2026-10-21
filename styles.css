@@ -11,6 +11,18 @@
   --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
+body.binge {
+  --bg: #f3f6fb;
+  --bg-top: #8eabef;
+  --bg-bottom: #f3f6fb;
+  --fg: #121826;
+  --muted: #4d596e;
+  --accent: #4169e1;
+  --rule: rgba(18, 24, 38, 0.12);
+  --card: #fbfcfe;
+  --bezel: #121826;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #161311;
@@ -22,6 +34,18 @@
     --rule: rgba(244, 238, 232, 0.14);
     --card: #1e1a17;
     --bezel: #0d0b0a;
+  }
+
+  body.binge {
+    --bg: #10141c;
+    --bg-top: #1a2d66;
+    --bg-bottom: #10141c;
+    --fg: #eef2f8;
+    --muted: #a8b3c7;
+    --accent: #7b97ff;
+    --rule: rgba(238, 242, 248, 0.14);
+    --card: #171d28;
+    --bezel: #0b0e14;
   }
 }
 
@@ -143,6 +167,10 @@ h2 {
   border-radius: 22px;
   overflow: hidden;
   box-shadow: 0 10px 28px rgba(204, 85, 0, 0.28);
+}
+
+body.binge .icon {
+  box-shadow: 0 10px 28px rgba(65, 105, 225, 0.32);
 }
 
 .hero h1 {
