@@ -1,19 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
   <defs>
     <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1024" y2="1024">
-      <stop offset="0%" stop-color="#5b7cfa"/>
-      <stop offset="100%" stop-color="#2a49c9"/>
+      <stop offset="0%" stop-color="#5b7cfa" />
+      <stop offset="100%" stop-color="#2a49c9" />
     </linearGradient>
     <clipPath id="c">
-      <rect width="1024" height="1024" rx="228"/>
+      <rect width="1024" height="1024" rx="228" />
     </clipPath>
   </defs>
-  <rect width="1024" height="1024" rx="228" fill="url(#g)"/>
+  
+  <!-- Base Background -->
+  <rect width="1024" height="1024" rx="228" fill="url(#g)" />
+  
   <g clip-path="url(#c)">
-    <rect x="156" y="118" width="528" height="318" rx="52" fill="#fff"/>
-    <rect x="360" y="390" width="120" height="62" rx="10" fill="#fff"/>
-    <rect x="250" y="434" width="340" height="48" rx="18" fill="#fff"/>
-    <rect x="204" y="162" width="432" height="220" rx="28" fill="url(#g)"/>
-    <path d="M150 560 L420 820 L1110 60" fill="none" stroke="#fff" stroke-width="130" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Antennae -->
+    <path d="M 280 60 L 460 170 M 744 60 L 564 170" stroke="#fff" stroke-width="44" stroke-linecap="round" />
+
+    <!-- TV Stand -->
+    <rect x="352" y="750" width="320" height="220" rx="48" fill="#fff" />
+
+    <!-- TV Bezel (Outer) -->
+    <rect x="40" y="136" width="944" height="732" rx="120" fill="#fff" />
+
+    <!-- TV Screen (Inner) -->
+    <rect x="112" y="208" width="800" height="588" rx="64" fill="url(#g)" />
+
+    <!-- Checkmarks -->
+    <path d="M180 360 L240 420 L330 310
+             M180 510 L240 570 L330 460
+             M180 660 L240 720 L330 610" fill="none" stroke="#fff" stroke-width="48" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- List Lines -->
+    <path d="M370 360 L830 360
+             M370 510 L830 510
+             M370 660 L830 660" fill="none" stroke="#fff" stroke-width="48" stroke-linecap="round" />
   </g>
 </svg>
