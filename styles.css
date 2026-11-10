@@ -12,9 +12,9 @@
 }
 
 body.binge {
-  --bg: #f3f6fb;
-  --bg-top: #8eabef;
-  --bg-bottom: #f3f6fb;
+  --bg: #f4f5f7;
+  --bg-top: #e4e4e2;
+  --bg-bottom: #f4f5f7;
   --fg: #121826;
   --muted: #4d596e;
   --accent: #4169e1;
@@ -38,7 +38,7 @@ body.binge {
 
   body.binge {
     --bg: #10141c;
-    --bg-top: #1a2d66;
+    --bg-top: #1a1a5c;
     --bg-bottom: #10141c;
     --fg: #eef2f8;
     --muted: #a8b3c7;
@@ -79,6 +79,40 @@ body::before {
   inset: 0;
   z-index: -1;
   background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+}
+
+body.binge::before {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0.48) 100%),
+    linear-gradient(
+      105deg,
+      #e4e4e2 0%,
+      #e6c42a 14%,
+      #2e9eb0 29%,
+      #34a03a 44%,
+      #c026c4 58%,
+      #d62832 73%,
+      #2424b0 88%,
+      #1a1a88 100%
+    );
+}
+
+@media (prefers-color-scheme: dark) {
+  body.binge::before {
+    background:
+      linear-gradient(180deg, rgba(16, 20, 28, 0.28) 0%, rgba(16, 20, 28, 0.62) 100%),
+      linear-gradient(
+        105deg,
+        #c8c8c6 0%,
+        #d4b41e 14%,
+        #1c8496 29%,
+        #22803a 44%,
+        #9a1898 58%,
+        #b01e2c 73%,
+        #1e1e9a 88%,
+        #14146a 100%
+      );
+  }
 }
 
 a {
@@ -170,7 +204,7 @@ h2 {
 }
 
 body.binge .icon {
-  box-shadow: 0 10px 28px rgba(65, 105, 225, 0.32);
+  box-shadow: 0 12px 28px rgba(18, 16, 22, 0.28);
 }
 
 .hero h1 {
