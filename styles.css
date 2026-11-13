@@ -294,40 +294,8 @@ body.binge .icon {
 }
 
 .hero .app-store {
-  margin-top: 0.85rem;
+  margin-top: 1.15rem;
   margin-bottom: 0;
-}
-
-.cta {
-  display: inline-block;
-  margin-top: 1.2rem;
-  padding: 0.8rem 1.25rem;
-  border-radius: 999px;
-  background: #4169e1;
-  color: #fff;
-  font-family: var(--sans);
-  font-size: 0.98rem;
-  font-weight: 650;
-  line-height: 1.2;
-  text-decoration: none;
-}
-
-.cta:hover {
-  background: #3558c4;
-  color: #fff;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  .cta {
-    background: #7b97ff;
-    color: #10141c;
-  }
-
-  .cta:hover {
-    background: #9aafff;
-    color: #10141c;
-  }
 }
 
 .app-store-badge {
